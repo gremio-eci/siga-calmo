@@ -1,0 +1,617 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/sira/temas/zire/css/estilo.css" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function doSomething() {
+
+        }
+    </script>
+</head>
+<body onload="doSomething();" class="body">
+<form method="post" action="/sira/Service/alteracaoPedidoInscricaoController">
+<table class="mainTable">
+<tr>
+<td>
+<table class="tabbed" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+    <td class="tabbedTabs">
+        <nobr>
+            <img src="/sira/temas/zire/images/tabStart.gif"/><img src="/sira/temas/zire/images/tabSelected_Esq.gif"/><img src="/sira/image/temas/zire/images/tabSelected.jpg?caption=Turmas" class="tabClicked"/><img src="/sira/temas/zire/images/tabSelected_Dir.gif"/><img src="/sira/temas/zire/images/tab_Esq.gif"/><input name="Edicao_eaction" value="Edicao_eaction" type="image" src="/sira/image/temas/zire/images/tab.jpg?caption=Inscri%E7%F5es" class="tabNormal"/><img src="/sira/temas/zire/images/tab_Dir.gif"/><img src="/sira/temas/zire/images/tab_Esq.gif"/><input name="Mensagem_eaction" value="Mensagem_eaction" type="image" src="/sira/image/temas/zire/images/tab.jpg?caption=Mensagem" class="tabNormal"/><img src="/sira/temas/zire/images/tab_Dir.gif"/><img src="/sira/temas/zire/images/tab_Esq.gif"/><input name="HelpState_eaction" value="HelpState_eaction" type="image" src="/sira/image/temas/zire/images/tab.jpg?caption=Ajuda" class="tabNormal"/><img src="/sira/temas/zire/images/tab_Dir.gif"/>
+        </nobr>
+    </td>
+    <td class="tabbedTitle">
+        <nobr>
+            Alteração de pedido de inscrição
+        </nobr>
+    </td>
+</tr>
+<tr>
+<td colspan="2" class="tabbedMain">
+<table width="100%" border=0 cellspacing=0 cellpadding=0 align="center">
+<tr>
+<td width="100%">
+<!-- inicio do horizontal box layout -->
+<table width="98%" border=0 cellspacing=0 cellpadding=3 align="center">
+<tr valign="middle">
+<td align="left">
+<table width="100%" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width="100%">
+<table width="100%" border=0 cellspacing=0 cellpadding=0 align="center">
+<tr>
+<td width="100%">
+<!-- início do grid layout ( 1 coluna(s) )-->
+<table width="100%" border=0 cellspacing=0 cellpadding=1 align="left">
+<tr valign="middle">
+<td align="left">
+<table class="lineBorder">
+<tr>
+<td>
+<table class="table">
+<tr class="checkTableBeforeRows">
+    <td colspan="7" align="center" class="checkTableBeforeRowsCell">
+        <input name="tableListaInscricaocheckAllItemsXCheckTable_0" value="tableListaInscricaocheckAllItemsXCheckTable_0" type="image" SRC="/sira/image/temas/zire/images/buttonDefault.jpg?caption=marcar+tudo" class="buttonDefault"/>&nbsp;<input name="tableListaInscricaouncheckAllItemsXCheckTable_1" value="tableListaInscricaouncheckAllItemsXCheckTable_1" type="image" SRC="/sira/image/temas/zire/images/buttonDefault.jpg?caption=desmarcar+tudo" class="buttonDefault"/>&nbsp;<input name="tableListaInscricaoremoveCheckedItemsXCheckTable_2" value="tableListaInscricaoremoveCheckedItemsXCheckTable_2" type="image" SRC="/sira/image/temas/zire/images/buttonDefault.jpg?caption=retirar+marcados+da+lista" class="buttonDefault"/>&nbsp;<input name="ListState-Editar_3" value="ListState-Editar_3" type="image" SRC="/sira/image/temas/zire/images/buttonDefault.jpg?caption=adicionar+%E0+inscri%E7%E3o" class="buttonDefault"/>&nbsp;
+    </td>
+</tr>
+<tr class="tableTitle">
+    <th align="left">&nbsp;</th>
+    <th align="left">Oferta</th>
+    <th align="center">Horário</th>
+    <th align="center">Disciplina</th>
+    <th align="center">Créditos</th>
+    <th align="center">Lotação</th>
+    <th align="center">Inscritos</th>
+</tr>
+<tr class="tableBody1">
+</tr>
+<tr class="tableBody1">
+</tr>
+<tr class="tableBody1">
+</tr>
+<tr class="tableBody1">
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_0_check_table_0_0" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IFA/FM/IG1/IGA(6833)<br>Astronomia</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">17</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_1_check_table_0_1" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálc Dif e Integ I - (Macaé)(10809)<br>Bacharelado em Química - M</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 19:30 às 21:30<br>Qua 19:30 às 21:30<br>Qui 19:30 às 21:30<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">30</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_2_check_table_0_2" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Calculo Difer e Integ I - MAA+MAL(6973)<br>Ciências Atuariais</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">20</span></td>
+    <td align="center"><span class="normalLabel">9</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_3_check_table_0_3" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - CMA (REP)(6835)<br>Ciências Matemáticas e da Terra</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">1</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_4_check_table_0_4" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - CMB (REP)(6853)<br>Ciências Matemáticas e da Terra</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_5_check_table_0_5" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EP1/EB2/ENU(6849)<br>Engenharia (Ciclo Básico)</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">19</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_6_check_table_0_6" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Cálc Dif e Integ I - (Macaé)(10809)<br>Engenharia (Núcleo Comum) - M</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 19:30 às 21:30<br>Qua 19:30 às 21:30<br>Qui 19:30 às 21:30<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">10</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_7_check_table_0_7" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EM1/EAM(6848)<br>Engenharia Ambiental</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">18</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_8_check_table_0_8" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ  I - EL1/EC2(6847)<br>Engenharia Civil</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">15</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_9_check_table_0_9" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EC1(6839)<br>Engenharia Civil</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">11</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_10_check_table_0_10" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EQB/NTA(6842)<br>Engenharia de Alimentos</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">7</span></td>
+    <td align="center"><span class="normalLabel">4</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_11_check_table_0_11" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Cálculo Difer e Integ I - IQG/IG1/EQG(6846)<br>Engenharia de Alimentos</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 13:00 às 15:00<br>Qua 13:00 às 15:00<br>Sex 13:00 às 15:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_12_check_table_0_12" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Cálculo Difer e Integ I - EQB/NTA(6842)<br>Engenharia de Bioprocessos</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">7</span></td>
+    <td align="center"><span class="normalLabel">7</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_13_check_table_0_13" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQG/IG1/EQG(6846)<br>Engenharia de Bioprocessos</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 13:00 às 15:00<br>Qua 13:00 às 15:00<br>Sex 13:00 às 15:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+    <td align="center"><span class="normalLabel">2</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_14_check_table_0_14" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Int I - ET1/ER1/ECI/ECA(6843)<br>Engenharia de Computação e Informação</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">9</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_15_check_table_0_15" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Int I - ET1/ER1/ECI/ECA(6843)<br>Engenharia de Controle e Automação</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">4</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_16_check_table_0_16" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Int I - ET1/ER1/ECI/ECA(6843)<br>Engenharia de Materiais</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_17_check_table_0_17" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Cálculo Difer e Integ I - EP1/EB2/ENU(6849)<br>Engenharia de Producao</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">12</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_18_check_table_0_18" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EE1(6840)<br>Engenharia Elétrica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">19</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_19_check_table_0_19" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ  I - EL1/EC2(6847)<br>Engenharia Eletrônica e de Computação</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">17</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_20_check_table_0_20" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EM1/EAM(6848)<br>Engenharia Mecânica</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">17</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_21_check_table_0_21" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Cálculo Difer e Int I - ET1/ER1/ECI/ECA(6843)<br>Engenharia Metalurgica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">7</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_22_check_table_0_22" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Cálculo Difer e Integ I - EN1/EQA(6838)<br>Engenharia Naval e Oceânica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">22</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_23_check_table_0_23" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EP1/EB2/ENU(6849)<br>Engenharia Nuclear</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 15:00 às 17:00<br>Qua 15:00 às 17:00<br>Sex 15:00 às 17:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">17</span></td>
+    <td align="center"><span class="normalLabel">10</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_24_check_table_0_24" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EN1/EQA(6838)<br>Engenharia Quimica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">20</span></td>
+    <td align="center"><span class="normalLabel">20</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_25_check_table_0_25" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EQB/NTA(6842)<br>Engenharia Quimica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">9</span></td>
+    <td align="center"><span class="normalLabel">6</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_26_check_table_0_26" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQG/IG1/EQG(6846)<br>Engenharia Quimica</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 13:00 às 15:00<br>Qua 13:00 às 15:00<br>Sex 13:00 às 15:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_27_check_table_0_27" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EQN(6851)<br>Engenharia Quimica - N</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 20:00 às 22:00<br>Qua 18:00 às 20:00<br>Sex 20:00 às 22:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">10</span></td>
+    <td align="center"><span class="normalLabel">1</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_28_check_table_0_28" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Calculo Difer e Integ I - MAA+MAL(6973)<br>Estatistica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_29_check_table_0_29" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Calculo Difer e Integ I - MAA+MAL(6973)<br>Estatística</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">15</span></td>
+    <td align="center"><span class="normalLabel">1</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_30_check_table_0_30" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IFA/FM/IG1/IGA(6833)<br>Fisica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">30</span></td>
+    <td align="center"><span class="normalLabel">20</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_31_check_table_0_31" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IFA/FM/IG1/IGA(6833)<br>Física - Física Médica</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">20</span></td>
+    <td align="center"><span class="normalLabel">14</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_32_check_table_0_32" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQA/IGL(6836)<br>Geologia</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">30</span></td>
+    <td align="center"><span class="normalLabel">40</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_33_check_table_0_33" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IFN/IQN(6855)<br>Licenciatura em Física</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 18:30 às 20:10<br>Qua 20:10 às 21:50<br>Sex 20:10 às 21:50<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_34_check_table_0_34" type="checkbox"/></td>
+    <td align="left">
+        <span class="normalLabel">Calculo Difer e Integ I - MAA+MAL(6973)<br>Licenciatura em Matemática</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">15</span></td>
+    <td align="center"><span class="normalLabel">15</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_35_check_table_0_35" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IFN/IQN(6855)<br>Licenciatura em Química</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 18:30 às 20:10<br>Qua 20:10 às 21:50<br>Sex 20:10 às 21:50<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_36_check_table_0_36" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálc Dif e Integ I - (Macaé)(10809)<br>Licenciatura em Química - M</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 19:30 às 21:30<br>Qua 19:30 às 21:30<br>Qui 19:30 às 21:30<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">30</span></td>
+    <td align="center"><span class="normalLabel">1</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_37_check_table_0_37" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Calculo Difer e Integ I - MAA+MAL(6973)<br>Matemática</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">15</span></td>
+    <td align="center"><span class="normalLabel">8</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_38_check_table_0_38" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IFA/FM/IG1/IGA(6833)<br>Meteorologia</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">20</span></td>
+    <td align="center"><span class="normalLabel">31</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_39_check_table_0_39" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQG/IG1/EQG(6846)<br>Meteorologia</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 13:00 às 15:00<br>Qua 13:00 às 15:00<br>Sex 13:00 às 15:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">10</span></td>
+    <td align="center"><span class="normalLabel">4</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_40_check_table_0_40" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EQB/NTA(6842)<br>Nanotecnologia</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">6</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_41_check_table_0_41" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQA/IGL(6836)<br>Quimica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 08:00 às 10:00<br>Qua 08:00 às 10:00<br>Sex 08:00 às 10:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">13</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_42_check_table_0_42" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQG/IG1/EQG(6846)<br>Quimica</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 13:00 às 15:00<br>Qua 13:00 às 15:00<br>Sex 13:00 às 15:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+    <td align="center"><span class="normalLabel">0</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_43_check_table_0_43" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EQB/NTA(6842)<br>Quimica Industrial</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 10:00 às 12:00<br>Qua 10:00 às 12:00<br>Sex 10:00 às 12:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">7</span></td>
+    <td align="center"><span class="normalLabel">15</span></td>
+</tr>
+<tr class="tableBody1">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_44_check_table_0_44" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - IQG/IG1/EQG(6846)<br>Quimica Industrial</span>
+    </td>
+    <td align="center">
+        <span class="normalLabel">Seg 13:00 às 15:00<br>Qua 13:00 às 15:00<br>Sex 13:00 às 15:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+    <td align="center"><span class="normalLabel">5</span></td>
+</tr>
+<tr class="tableBody2">
+    <td align="center"><input class="checkbox" name="tableListaInscricao_45_check_table_0_45" type="checkbox"/></td>
+    <td align="left"><span class="normalLabel">Cálculo Difer e Integ I - EQN(6851)<br>Quimica Industrial - N</span></td>
+    <td align="center">
+        <span class="normalLabel">Seg 20:00 às 22:00<br>Qua 18:00 às 20:00<br>Sex 20:00 às 22:00<br></span></td>
+    <td align="center"><span class="normalLabel">MAC118</span></td>
+    <td align="center"><span class="normalLabel"> 6.0</span></td>
+    <td align="center"><span class="normalLabel">10</span></td>
+    <td align="center"><span class="normalLabel">2</span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- fim do grid layout -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+    <td width="100%" align="center">
+        <input name="ListapreviousCard" value="ListapreviousCard" type="image" SRC="/sira/temas/zire/images/basic_green_leftarrow.gif" class="previousButton"/>&nbsp;&nbsp;
+    </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- fim do horizontal box layout -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+    <td>
+        <table class="statusBar">
+            <tr>
+                <td align="left" class="statusBarCell"></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table class="buttonBar">
+            <tr>
+                <td class="buttonBarColumn">
+                    <input name="SelectState-consultar" value="SelectState-consultar" type="image" SRC="/sira/image/temas/zire/images/buttonAction.jpg?caption=consultar" class="buttonAction"/>
+                    <input name="SelectState-limpar" value="SelectState-limpar" type="image" SRC="/sira/image/temas/zire/images/buttonAction.jpg?caption=limpar" class="buttonAction"/>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

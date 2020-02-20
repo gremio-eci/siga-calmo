@@ -1,0 +1,44 @@
+#print {
+    padding: 4px;
+}
+
+@media print {
+
+    @page {
+        size: landscape
+    }
+
+    #sidebar, .navbar, .clear-courses, .save-schedule,
+    .footer-inner .facebook, .footer-inner .fb-comments-wrapper, .reload-schedule, .no-print {
+        display: none !important;
+    }
+
+    footer {
+        border-top: 0 !important;
+        background: none !important;
+    }
+
+    div.weekday {
+        width: 140px !important;
+    }
+
+    #agenda .schedule {
+        width: 140px !important;
+    }
+
+    .printed-from {
+        display: block;
+    }
+
+    div.hours > div:before {
+        width: 1030px !important;
+    }
+
+    #totals {
+        width: 990px !important;
+    }
+}
+
+:root {
+    -webkit-print-color-adjust: exact;
+}

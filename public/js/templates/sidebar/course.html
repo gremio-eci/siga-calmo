@@ -1,0 +1,26 @@
+<div class='icons'>
+    <i class="add icon-plus-sign"></i>
+    <i class="remove icon-minus-sign"></i>
+    <i class="ok icon-ok-sign"></i>
+</div>
+<div class='name' data-bind="text: ~name"></div>
+<div class='info-bar'>
+    <div class='code' data-bind="text: ~code"></div>
+    <div class='credits' data-bind="text: ~credits créditos"></div>
+    <div class='semester' data-bind="text: `this.model.isOld() ? this.model.formattedSemester() || 'Antiga' : ''`"></div>
+</div>
+<div class="details">
+    <div class='updatedAt'>
+        <i class='icon-time'></i>
+        Atualizado
+        <span class='title' data-bind="relative-date: ~updatedAt"></span>
+    </div>
+    <div class='teachers'>
+        <div class='title'>Professores</div>
+        <ul>
+            <% this.model.get('teachers').each(function(teacher){ %>
+            <li><%= teacher %></li>
+            <% }) %>
+        </ul>
+    </div>
+</div>

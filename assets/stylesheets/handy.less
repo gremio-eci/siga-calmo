@@ -1,0 +1,29 @@
+@import "elements.less";
+
+.relative(@top: 1px, @left: 1px){
+    position: relative;
+    top: @top;
+    left: @left;
+}
+
+.absolute(@top: 0, @left: 0){
+    position: absolute;
+    top: @top;
+    left: @left;
+}
+
+.box-sizing(@argument){
+    -webkit-box-sizing: @argument;
+    -moz-box-sizing: @argument;
+    box-sizing: @argument;
+}
+
+
+#a {
+    .underline() {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

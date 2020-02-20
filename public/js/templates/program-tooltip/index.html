@@ -1,0 +1,18 @@
+<div class='title' data-bind="text: ~name"></div>
+<ul class='periods'>
+    <% this.model.get('periods').each(function(period){ %>
+    <li class='period'></li>
+    <% } %>
+    <li class='restrictive'>
+        <h2>Eletivas Restritas</h2>
+        <% this.model.get('restrictive').each(function(course){ %>
+
+        <% } %>
+    </li>
+    <li class='conditional'>
+        <h2>Eletivas Condicionadas</h2>
+        <% this.model.get('conditional').each(function(course){ %>
+
+        <% } %>
+    </li>
+</ul>

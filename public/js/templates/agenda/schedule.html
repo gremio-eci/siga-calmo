@@ -1,0 +1,7 @@
+<div data-bind="css: backgroundColor ~-color; class: data `this.model.isOld() ? 'old' : ''`">
+    <i class='icon-minus-sign'></i>
+    <div class='name' data-bind="text: ~name"></div>
+    <div class='code' data-bind="text: ~code"></div>
+    <div class='time'><%= this.formattedTime() %></div>
+    <div class='old-label' title='<%= this.model.formattedSemester() ? "A grade desta matéria é de " + this.model.formattedSemester() : "A grade desta matéria é antiga" %>'>ANTIGA</div>
+</div>

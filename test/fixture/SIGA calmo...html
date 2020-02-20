@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>SIGA calmo..</title>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="/js/vendor/require.js"></script>
+    <script src="/app.min.js"></script>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=357430137676016";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner" style='padding-top:4px'>
+        <div class="container">
+            <a class="brand">SIGA <span class='calmo'>calmo..</span></a>
+            <button id="print" class='btn'><i class='icon-print' title='Clique para imprimir seu horário'></i></button>
+            <input id="permalink" type='text' placeholder='Aqui aparecerá um link para o horário criado'/>
+            <img class='fb-share' src='/images/facebook-share.png' alt='Compartilhe seu horário com seus amigos!'/>
+            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class='clearfix'>
+        <div id="totals"></div>
+        <div id="agenda"></div>
+        <div id="sidebar"></div>
+    </div>
+</div>
+
+
+<footer>
+    <div class='footer-inner'>
+        <p>Desenvolvido por <a href="mailto:pimguilherme@gmail.com">Guilherme Pim</a></p>
+        <p class='printed-from'>Impresso de <b>http://siga.pimguilherme.com/</b></p>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class='header' title='Clique para voltar à lista'>
+    <i class="icon-chevron-left"></i>
+    <div class='name' data-bind="text: ~name"></div>
+    <div class='info'>
+        <div class='periods'>
+            <% if (this.model.get('periods').length) { %>
+            <span class='counter'><%=this.model.get('periods').length %></span>
+            <span class='lbl'><%= this.model.get('periods').length == 1 ?  'período' : 'períodos' %></span>
+            <% } %>
+        </div>
+        <div class='dates'>
+            <% if (!this.model.get('endSemester') || this.model.get('endSemester') == '9999/9') { %>
+            <%= 'de <span class=start>' + this.model.get('startSemester') + '</span> até <span class=today>hoje</span> ' %>
+            <% } else { %>
+            <%= 'de <span class=start>' + this.model.get('startSemester') + '</span> até <span class=end>' + this.model.get('endSemester') + '</span> ' %>
+            <% } %>
+        </div>
+    </div>
+    <div class='degree' data-bind="text: ~degree"></div>
+</div>
+<ul class='periods'></ul>

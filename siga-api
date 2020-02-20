@@ -1,0 +1,55 @@
+__utma=230731037.996223360.1343820557.1348745265.1348748832.10; __utmb=230731037.5.10.1348748832; __utmc=230731037; __utmz=230731037.1348748832.10.10.utmcsr=intranet.ufrj.br|utmccn=(referral)|utmcmd=referral|utmcct=/Menu.asp; JSESSIONID=334DC4B0C3AB1E7EFD84FA66DE80AA2C.ufrjwa02
+
+https://www.siga.ufrj.br/sira/temas/zire/frames.jsp
+
+https://www.siga.ufrj.br/sira/intranet/MainWindow.jsp
+
+Login: https://www.siga.ufrj.br/sira/intranet/MainWindow.jsp?identificacaoUFRJ=12727004702&idSessao=499085182
+
+Logout: https://www.siga.ufrj.br/sira/intranet/LogoutSiga.jsp
+		
+	Obrigado por usar o siga
+
+Condição anormal: 500
+
+https://www.siga.ufrj.br/sira/intranet/MainWindow.jsp?idSessao=499096214&identificacaoUFRJ12727004702
+https://www.siga.ufrj.br/sira/intranet/MainWindow.jsp?identificacaoUFRJ=12727004702&idSessao=499095379
+
+
+var mongoose = require('mongoose'),
+    utils = require('../../lib/utils')
+
+/**
+ * Registro de um voto do usuário
+ */
+
+var Schema = new mongoose.Schema({
+    code:String, // Course code, e.g. MAC118
+    name:String, // Descriptive title e.g. Cálculo Difer e Integ I - IQA/IGL
+    credits:Number,
+    updatedAt:Date, // Last time at which this was updated from SIGA
+    period:Number,
+    classes:[
+        {
+            sigaId:String,
+            program:String,
+            updatedAt:Date,
+            // Weekdays
+            days:[
+                {
+                    // 0-6 (sun-sat)
+                    weekday:Number,
+                    // 1200
+                    start:Number,
+                    // 1500
+                    end:Number
+                }
+            ]
+        }
+    ]
+});
+
+Schema.index({code: 1}, {unique: 1})
+Schema.index({name: 1})
+
+module.exports = Schema;

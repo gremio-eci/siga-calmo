@@ -1,0 +1,20 @@
+<div class='header'>
+    <div class=title><%= this.title %></div>
+    <div class='icon'>
+        <span class='loading'></span>
+        <% if(!this.period.length){ %>
+        <span class='empty'>sem matérias</span>
+        <% } %>
+        <% if(this.period.length > 0){ %>
+        <span class='count'><span class=selected>0</span> de <%= this.period.length %></span>
+        <span class='expand'>
+            <i class="show icon-chevron-down"></i>
+            <i class="hide icon-chevron-up"></i>
+        </span>
+        <% } %>
+    </div>
+</div>
+<div class='expansion'>
+    <div class='message'></div>
+    <ul class='period-courses' data-bind='collection: ~collection: sidebar/course'></ul>
+</div>

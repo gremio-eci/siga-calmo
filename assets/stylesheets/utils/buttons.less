@@ -1,0 +1,78 @@
+@import "../elements.less";
+
+/**
+* Botões
+*/
+.btn {
+    outline: 0;
+    cursor: pointer;
+    padding: 4px;
+
+    text-transform: uppercase;
+    color: #fff;
+    font: 12px 'Open Sans Condensed';
+
+    color: #fff;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+    #border > .rounded(5px);
+
+    &:active {
+        padding: 4px 4px 2px 4px;
+    }
+
+    &.no-rounded {
+        #border > .rounded(0)
+    }
+
+    &.large {
+        font: bold 18px 'Open Sans Condensed';
+        padding: 6px;
+    }
+
+    &.red {
+
+        #shadow > .text(0 1px 1px rgba(0, 0, 0, 0.25));
+        #gradient > .vertical(#DA4F49, #EE5F5B, #BD362F);
+
+        &:hover, &:active {
+            #gradient > .vertical(#DA4F49, #BD362F, #EE5F5B);
+        }
+
+        &:active {
+            #gradient > .vertical(#DA4F49, #EE5F5B, #BD362F, 0.2, 1);
+        }
+
+    }
+
+    &.green {
+
+        #shadow > .text(0 1px 1px rgba(0, 0, 0, 0.25));
+        #gradient > .vertical(#3cb64b, #62C462, #51A351);
+
+        &:hover, &:active {
+            #gradient > .vertical(#3cb64b, #51A351, #62C462);
+        }
+
+        &:active {
+            #gradient > .vertical(#3cb64b, #62C462, #51A351, 0.2, 1);
+        }
+    }
+
+    &.grey {
+        color: #444;
+
+        #shadow > .box(none);
+        #gradient > .vertical(#fff, #fff, #ccc, 0.5);
+
+        &:hover {
+            #gradient > .vertical(#eee, #fff, #ccc, 0.3);
+        }
+
+        &:active {
+            #gradient > .vertical(#eee, #ccc, #fff, 0.1);
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+<div class='filters'>
+    <i class="icon-search"></i>
+    <input class='search' type='text' placeholder="Digite o código ou a matéria">
+    <i class="icon-filter" title='Clique para acessar mais filtros'></i>
+    <div class='extra-filters' style='display:none'>
+        <div class='clear-filters'>limpar filtros</div>
+        <label class='codes'>
+            <div>códigos</div>
+            <input maxlength="6" type=text name='codes' placeholder='digite códigos de matérias'/>
+        </label>
+        <label class='programs'>
+            <div>cursos</div>
+            <input type=text name='programs' placeholder='digite cursos'/>
+        </label>
+        <label class='teachers'>
+            <div>professores</div>
+            <input type=text name='teachers' placeholder='Digite nomes'/>
+        </label>
+        <label class='old-courses'>
+            <div><input type='checkbox' name='old-courses'> Exibir matérias de grades passadas</div>
+        </label>
+        <div class='btn-group days'>
+            <a class="btn active">Dom</a>
+            <a class="btn active">2a</a>
+            <a class="btn active">3a</a>
+            <a class="btn active">4a</a>
+            <a class="btn active">5a</a>
+            <a class="btn active">6a</a>
+            <a class="btn active">Sáb</a>
+        </div>
+    </div>
+</div>
+<ul data-bind="collection: ~collection: sidebar/course" class='courses'></ul>
+<div class='no-results'>sem resultados para esta pesquisa</div>
+<div class='loading'></div>

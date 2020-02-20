@@ -1,0 +1,67 @@
+.main {
+    position: relative;
+}
+
+a.save-schedule {
+    display: none;
+    left: 837px;
+    position: absolute;
+    top: 57px;
+}
+
+a.reload-schedule {
+    display: none;
+    right: 10px;
+    position: absolute;
+    top: 57px;
+}
+
+div.app-loading {
+    position: absolute;
+    right: 23px;
+    top: 16px;
+}
+
+.share-link {
+    cursor:pointer;
+    &:focus {
+        border-color: 0 !important;
+        #shadow > .none() !important;
+    }
+}
+
+.fb-share {
+    cursor: pointer;
+    position: relative;
+    #transform > .opacity(0.8);
+
+    &.enabled {
+        #transform > .opacity(1);
+        &:active {
+            top: 1px;
+            left: 1px;
+        }
+    }
+}
+
+.fb-comments-wrapper {
+    position: absolute;
+}
+
+.app-exception {
+    .icon-thumbs-down {
+        display: inline-block;
+    }
+    position: absolute;
+    left: 50%;
+    width: 230px;
+    z-index: 50000;
+    top: 0;
+    padding: 5px 10px;
+    margin-left: -120px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    font: 16px arial;
+    line-height: 30px;
+    display:none;
+}

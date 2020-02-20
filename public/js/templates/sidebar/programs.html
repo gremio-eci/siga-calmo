@@ -1,0 +1,20 @@
+<div class='filters'>
+    <i class="icon-search"></i>
+    <input class='search' type='text' placeholder="Digite o nome do curso">
+</div>
+<div class='expanded-program'></div>
+<div class='list'>
+    <div class='messages'>
+        <div class='outdated-message'>
+            Apenas as versões mais recentes estão sendo exibidas.
+            <div><a class='show-outdated'>Clique aqui para exibir as antigas</a></div>
+        </div>
+        <div class='recent-message'>
+            Todas as versões estão sendo exibidas.
+            <div><a class='show-recent'>Clique aqui para omitir as antigas</a></div>
+        </div>
+    </div>
+    <ul data-bind="collection: ~collection: sidebar/program" class='programs'></ul>
+    <div class='no-results'>sem resultados para esta pesquisa</div>
+    <div class='loading'></div>
+</div>
